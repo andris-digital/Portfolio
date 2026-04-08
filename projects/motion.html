@@ -35,10 +35,15 @@
     </iframe>
 </div>
 
+
+    
 <div style="text-align: center;">
-  <div style="display: inline-block;">
+  <div style="display: inline-block; width: 100%; max-width: 720px;">
+    
     <script src="https://roche.scene7.com/s7viewers/html5/js/VideoViewer.js"></script>
-    <div id="dynamicmedia_70436814"></div>
+    
+    <div id="dynamicmedia_70436814" style="width: 100%; height: auto;"></div>
+
     <script type="text/javascript">
       var videoViewer = new s7viewers.VideoViewer();
       videoViewer.setParam("videoserverurl", "https://roche.scene7.com/is/content/");
@@ -46,12 +51,16 @@
       videoViewer.setParam("contenturl", "https://roche.scene7.com/is/content/");
       videoViewer.setParam("style", "OpentemplateProd/_CSS/_OOTB/html5_videoviewersocial.css");
       videoViewer.setAsset("OpentemplateProd/WAYFIND-RVideo-AVS");
-      videoViewer.setParam("stagesize", "640,480");
+
+      // Responsive size
+      videoViewer.setParam("stagesize", "100%,auto");
+
       videoViewer.setParam("emailurl", "https://roche.scene7.com/is/image/../..//s7/emailFriend");
       videoViewer.setParam("config", "/OpentemplateProd/Video_social");
       videoViewer.setContainerId("dynamicmedia_70436814");
       videoViewer.init();
     </script>
+
   </div>
 </div>
 
